@@ -7,15 +7,16 @@
 
 /* BODY */
 body {
-    font-family: Arial, sans-serif;
-    background: #eef2f7;
+    font-family: 'Arial', sans-serif;
+    background: #f4f7f8;
     color: #333;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    line-height: 1.6;
 }
 
-/* MAIN */
+/* MAIN CONTAINER */
 .main-container {
     flex: 1;
 }
@@ -25,12 +26,11 @@ header {
     background: #1e3a5f;
     color: white;
     text-align: center;
-    padding: 20px;
-    position: relative;
+    padding: 50px 20px;
 }
 
 header img {
-    width: 200px;
+    width: 220px;
     transition: 0.3s;
 }
 
@@ -38,7 +38,6 @@ header img:hover {
     transform: scale(1.05);
 }
 
-/* LANGUAGE */
 .language-switch {
     position: absolute;
     top: 20px;
@@ -47,8 +46,8 @@ header img:hover {
 
 .language-switch a {
     color: white;
-    margin-left: 10px;
     font-weight: bold;
+    margin-left: 10px;
 }
 
 /* NAV */
@@ -61,7 +60,8 @@ nav {
 
 nav a {
     color: white;
-    padding: 15px;
+    padding: 18px 25px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
@@ -72,58 +72,39 @@ nav a:hover {
 /* HERO */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('https://images.unsplash.com/photo-1492724441997-5dc865305da7');
+                url('https://images.unsplash.com/photo-1492724441997-5dc865305da7');
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 100px 20px;
-    animation: fadeIn 1s ease-in;
+    padding: 120px 20px;
 }
 
 .hero h2 {
-    font-size: 36px;
+    font-size: 42px;
+    margin-bottom: 15px;
 }
 
 .hero p {
-    margin: 15px 0;
+    font-size: 22px;
+    margin-bottom: 25px;
 }
 
-/* BUTTON */
+/* BUTTONS */
 .btn {
     background: #ffd700;
-    padding: 12px 25px;
-    border-radius: 5px;
+    padding: 15px 30px;
+    border-radius: 6px;
     display: inline-block;
     font-weight: bold;
     color: black;
-}
-
-/* CONTAINER */
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 30px 20px;
-}
-
-/* FLEX */
-.flex {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-/* BOX */
-.box {
-    background: white;
-    padding: 20px;
-    flex: 1 1 250px;
-    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none;
     transition: 0.3s;
 }
 
-.box:hover {
-    transform: translateY(-10px);
+.btn:hover {
+    background: #e6c200;
 }
 
 /* CTA */
@@ -131,21 +112,52 @@ nav a:hover {
     background: #2c5282;
     color: white;
     text-align: center;
-    padding: 40px;
+    padding: 50px 20px;
+    margin: 40px auto;
     border-radius: 10px;
 }
 
-/* FORM */
-form {
+.cta h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* FLEX BOXES */
+.flex {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.box {
     background: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 30px 20px;
+    flex: 1 1 300px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+.box:hover {
+    transform: translateY(-10px);
+}
+
+/* BOX HEADINGS */
+.box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
 /* FOOTER */
@@ -153,7 +165,18 @@ footer {
     background: #1e3a5f;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
+    font-size: 16px;
+}
+
+/* LINKS IN FOOTER */
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* ANIMATION */
@@ -162,7 +185,9 @@ footer {
     to {opacity:1;}
 }
 
-/* MOBILE */
+/* RESPONSIVE */
 @media(max-width:768px){
     .flex { flex-direction: column; }
+    .hero h2 { font-size: 32px; }
+    .hero p { font-size: 18px; }
 }
