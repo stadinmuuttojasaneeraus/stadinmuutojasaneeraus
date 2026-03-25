@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html lang="fi">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Företagsnamn</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Yhteystiedot</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<div class="main-container">
+
 <header>
-    <img src="images/logo.jpg" alt="Logo">
-    <h1>Yrityksen nimi</h1>
-    <div class="language-switch">
-        <a href="index.html">FI</a> |
-        <a href="index_sv.html">SV</a> |
-        <a href="index_en.html">EN</a>
-    </div>
+<img src="images/logo.jpg">
+<h1>Yrityksen nimi</h1>
+
+<div class="language-switch">
+<a href="index.html">FI</a> |
+<a href="index_sv.html">SV</a> |
+<a href="index_en.html">EN</a>
+</div>
 </header>
 
 <nav>
-    <a href="index.html">Etusivu</a>
-    <a href="about.html">Meistä</a>
-    <a href="services.html">Palvelut</a>
-    <a href="contact.html">Yhteystiedot</a>
+<a href="index.html">Etusivu</a>
+<a href="about.html">Tietoa meistä</a>
+<a href="services.html">Palvelut</a>
+<a href="contact.html">Yhteystiedot</a>
 </nav>
 
 <div class="container">
-    <h2>Yhteystiedot</h2>
-    <form action="https://formspree.io/f/your-id" method="POST">
-        <label>Nimi:</label>
-        <input type="text" name="name" required>
 
-        <label>Sähköposti:</label>
-        <input type="email" name="email" required>
+<h2>Ota yhteyttä</h2>
 
-        <label>Viesti:</label>
-        <textarea name="message" rows="5" required></textarea>
+<form action="https://formspree.io/f/your-id" method="POST">
+<input type="text" name="name" placeholder="Nimi" required>
+<input type="email" name="email" placeholder="Sähköposti" required>
+<textarea name="message" rows="5" placeholder="Viesti" required></textarea>
+<button type="submit">Lähetä</button>
+</form>
 
-        <button type="submit">Lähetä</button>
-    </form>
+<h3>Sijainti</h3>
+
+<iframe 
+src="https://www.google.com/maps?q=Helsinki&output=embed"
+width="100%" 
+height="300" 
+style="border:0; border-radius:10px; margin-top:20px;">
+</iframe>
+
+</div>
+
 </div>
 
 <footer>
-    © 2026 Yrityksen nimi
+© 2026 Yrityksen nimi
 </footer>
 
 </body>
