@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Contact – Company Name</title>
 
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; background-color: #f5f5f5; }
-        header { background-color: #1e3a5f; color: white; padding: 15px; text-align: center; }
-        nav { background-color: #2c5282; padding: 10px; text-align: center; }
-        nav a { color: white; margin: 10px; text-decoration: none; font-weight: bold; }
-        .container { padding: 20px; background: white; margin: 20px; border-radius: 10px; }
-        footer { text-align: center; padding: 15px; background: #1e3a5f; color: white; }
-        input, textarea, button { width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; }
-        button { background-color: #2c5282; color: white; border: none; cursor: pointer; }
-        button:hover { background-color: #1e3a5f; }
+        body { font-family: Arial, sans-serif; margin:0; background:#eef2f7; color:#333; }
+        a { text-decoration: none; color: inherit; }
+        header { background:#1e3a5f; color:white; padding:20px; text-align:center; position:relative; }
+        header img { width:120px; margin-bottom:10px; }
+        .language-switch { position:absolute; top:20px; right:20px; }
+        .language-switch a { color:white; margin-left:10px; font-weight:bold; }
+        .language-switch a:hover { text-decoration:underline; }
+        nav { background:#2c5282; display:flex; justify-content:center; flex-wrap:wrap; padding:10px; }
+        nav a { color:white; margin:10px 15px; font-weight:bold; transition:0.3s; }
+        nav a:hover { color:#ffd700; }
+        .container { max-width:600px; margin:30px auto; padding:20px; background:white; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
+        input, textarea, button { width:100%; padding:10px; margin-top:5px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc; }
+        button { background-color:#2c5282; color:white; border:none; cursor:pointer; transition:0.3s; }
+        button:hover { background-color:#1e3a5f; }
+        footer { text-align:center; padding:20px; background:#1e3a5f; color:white; margin-top:30px; }
+        @media(max-width:768px){ nav{flex-direction:column;} }
     </style>
 </head>
+
 <body>
 
 <header>
-    <img src="images/logo.jpg" width="120"><br>
+    <img src="images/logo.jpg" alt="Logo">
     <h1>Company Name</h1>
+    <div class="language-switch">
+        <a href="index.html">FI</a> |
+        <a href="index_sv.html">SV</a> |
+        <a href="index_en.html">EN</a>
+    </div>
 </header>
 
 <nav>
