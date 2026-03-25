@@ -15,10 +15,11 @@ header {
 }
 
 header img {
-    max-width: 450px; /* ännu större */
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    max-width: 450px !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
 }
 }
 
