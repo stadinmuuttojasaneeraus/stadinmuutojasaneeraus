@@ -1,193 +1,216 @@
-/* RESET */
-* {
+/* ===== BODY & FONTS ===== */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* BODY */
-body {
     font-family: 'Arial', sans-serif;
-    background: #f4f7f8;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    line-height: 1.6;
+    background-color: #1a1a1a;  /* mörk bakgrund för maskulin känsla */
+    color: #e6e6e6;            /* ljus text */
 }
 
-/* MAIN CONTAINER */
-.main-container {
-    flex: 1;
-}
-
-/* HEADER */
+/* ===== HEADER ===== */
 header {
-    background: #1e3a5f;
-    color: white;
+    background-color: #0d1a26; /* mörkblå / nästan svart */
+    padding: 20px 0;
     text-align: center;
-    padding: 50px 20px;
 }
 
 header img {
-    width: 220px;
-    transition: 0.3s;
+    max-width: 180px;
+    height: auto;
 }
 
-header img:hover {
-    transform: scale(1.05);
-}
-
-.language-switch {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+header h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+    color: #ffffff;
 }
 
 .language-switch a {
-    color: white;
+    color: #f0a500;  /* accentfärg, t.ex. guld/orange */
+    margin: 0 8px;
+    text-decoration: none;
     font-weight: bold;
-    margin-left: 10px;
 }
 
-/* NAV */
+.language-switch a:hover {
+    text-decoration: underline;
+}
+
+/* ===== NAVIGATION ===== */
 nav {
-    background: #2c5282;
+    background-color: #14213d; /* stark blå */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 nav a {
-    color: white;
-    padding: 18px 25px;
+    color: #ffffff;
+    padding: 14px 20px;
+    text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
 }
 
 nav a:hover {
-    background: #1e3a5f;
+    background-color: #f0a500;
+    color: #000000;
+    border-radius: 5px;
 }
 
-/* HERO */
+/* ===== HERO SECTION ===== */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                url('https://images.unsplash.com/photo-1492724441997-5dc865305da7');
-    background-size: cover;
-    background-position: center;
-    color: white;
+    background-color: #1f2a38; /* mörk sektion */
     text-align: center;
-    padding: 120px 20px;
+    padding: 80px 20px;
 }
 
 .hero h2 {
-    font-size: 42px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 22px;
-    margin-bottom: 25px;
-}
-
-/* BUTTONS */
-.btn {
-    background: #ffd700;
-    padding: 15px 30px;
-    border-radius: 6px;
-    display: inline-block;
-    font-weight: bold;
-    color: black;
-    font-size: 18px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #e6c200;
-}
-
-/* CTA */
-.cta {
-    background: #2c5282;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-    margin: 40px auto;
-    border-radius: 10px;
-}
-
-.cta h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
-}
-
-.cta p {
-    font-size: 18px;
+    font-size: 2.8em;
     margin-bottom: 20px;
 }
 
-/* CONTAINER */
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px 20px;
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
 }
 
-/* FLEX BOXES */
+.hero .btn {
+    background-color: #f0a500;
+    color: #000;
+    padding: 15px 35px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hero .btn:hover {
+    background-color: #d18e00;
+}
+
+/* ===== CONTAINER & BOXES ===== */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
 .flex {
     display: flex;
-    gap: 25px;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .box {
-    background: white;
-    padding: 30px 20px;
-    flex: 1 1 300px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    transition: 0.3s;
+    background-color: #0d1a26;
+    padding: 25px;
+    margin: 10px;
+    flex: 1 1 30%;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-.box:hover {
-    transform: translateY(-10px);
-}
-
-/* BOX HEADINGS */
 .box h3 {
-    font-size: 24px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #f0a500;
+}
+
+.box p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+/* ===== CTA ===== */
+.cta {
+    background-color: #14213d;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cta h2 {
+    font-size: 2em;
     margin-bottom: 15px;
 }
 
-/* FOOTER */
-footer {
-    background: #1e3a5f;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    font-size: 16px;
+.cta p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
 }
 
-/* LINKS IN FOOTER */
-footer a {
-    color: #ffd700;
+.cta .btn {
+    background-color: #f0a500;
+    color: #000;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 5px;
     text-decoration: none;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.cta .btn:hover {
+    background-color: #d18e00;
 }
 
-/* ANIMATION */
-@keyframes fadeIn {
-    from {opacity:0;}
-    to {opacity:1;}
+/* ===== FORMS ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-/* RESPONSIVE */
-@media(max-width:768px){
-    .flex { flex-direction: column; }
-    .hero h2 { font-size: 32px; }
-    .hero p { font-size: 18px; }
+form input, form textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #f0a500;
+    color: #000;
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d18e00;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #0d1a26;
+    text-align: center;
+    color: #ffffff;
+    padding: 25px 10px;
+    margin-top: 40px;
+}
+
+/* ===== IMAGES ===== */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .hero h2 {
+        font-size: 2em;
+    }
 }
