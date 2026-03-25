@@ -14,16 +14,13 @@ header {
     text-align: center;
 }
 
-header {
-    height: 500px; /* gör headern högre → logotypen blir större */
-    background-image: url('images/logo.jpg'); /* din logotypfil */
-    background-size: contain; /* hela logotypen syns, inget beskärs */
-    background-repeat: no-repeat; /* ingen upprepning */
-    background-position: center; /* centrerad logotyp */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+logo-header {
+    height: 300px; /* gör logotypen stor */
+    background-image: url('images/logo.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 }
 }
 }
