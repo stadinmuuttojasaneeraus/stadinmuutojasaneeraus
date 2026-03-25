@@ -15,8 +15,11 @@ header {
 }
 
 header img {
-    max-width: 180px;
+    max-width: 450px; /* ännu större */
     height: auto;
+    display: block;
+    margin: 0 auto;
+}
 }
 
 header h1 {
