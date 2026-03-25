@@ -14,11 +14,17 @@ header {
     text-align: center;
 }
 
-header img {
-    max-width: 450px !important;
-    height: auto !important;
-    display: block !important;
-    margin: 0 auto !important;
+header {
+    height: 500px; /* gör headern högre → logotypen blir större */
+    background-image: url('images/logo.jpg'); /* din logotypfil */
+    background-size: contain; /* hela logotypen syns, inget beskärs */
+    background-repeat: no-repeat; /* ingen upprepning */
+    background-position: center; /* centrerad logotyp */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 }
 }
 }
