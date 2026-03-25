@@ -14,7 +14,7 @@ header {
     text-align: center;
 }
 
-logo-header {
+.logo-header {
     height: 300px; /* gör logotypen stor */
     background-image: url('images/logo.jpg');
     background-size: contain;
