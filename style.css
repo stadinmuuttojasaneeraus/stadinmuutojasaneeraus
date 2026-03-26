@@ -13,11 +13,11 @@ header {
     text-align: center;
 }
 
-/* Logotypen som bakgrund */
+
 .logo-header {
-    height: 400px; /* justera storlek på logotypen */
+    height: 200px; /* justera storlek */
     background-image: url('images/logo.jpg');
-    background-size: contain; /* hela logotypen syns */
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
