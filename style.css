@@ -9,22 +9,25 @@ body {
   color: #333;
 }
 
+
 /* ----------------- Header Banner ----------------- */
 .banner-header {
   width: 100%;
-  height: 120px;               /* Höjden på bannern */
+  height: auto;               /* Låt bannern anpassa sig efter loggans höjd */
+  max-height: 120px;          /* Men sätt maxhöjd på 120px */
   background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 0;            /* Lite luft ovanför/under */
 }
 
 .logo-banner {
-  width: 100%;                 /* Fyller hela bredden */
-  height: 100%;                /* Fyller hela höjden på bannern */
-  object-fit: fill;            /* Loggan stretchar för att fylla hela ytan */
+  width: 100%;                /* Fyller bredden */
+  height: auto;               /* Behåller proportioner */
+  max-height: 100%;           /* Stoppar loggan från att bli högre än bannern */
+  object-fit: contain;        /* Behåller proportioner */
 }
-
 /* ----------------- Flikmeny ----------------- */
 .main-tabs {
   display: flex;
