@@ -17,7 +17,7 @@ body {
 ========================== */
 .banner-header {
   width: 100%;
-  max-height: 120px;
+  height: 150px; /* desktop höjd */
   background: #fff;
   display: flex;
   justify-content: center;
@@ -26,8 +26,8 @@ body {
 
 .logo-banner {
   width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: contain; /* bevarar proportioner */
 }
 
 /* ==========================
@@ -35,11 +35,10 @@ body {
 ========================== */
 .top-tabs {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* vågrätt på desktop */
   align-items: center;
   gap: 15px;
   padding: 10px 0;
-  flex-wrap: wrap;
 }
 
 .top-tabs a {
@@ -151,7 +150,7 @@ footer p {
   font-size: 16px;
   display: inline-block;
   width: auto;
-  max-width: 300px; /* maxbredd för små skärmar */
+  max-width: 300px; /* maxbredd */
   transition: all 0.3s;
   text-align: center;
 }
@@ -162,8 +161,7 @@ footer p {
 }
 
 /* ==========================
-   MOBILE / RESPONSIVE
-   För index, contact, about (ursprungliga mobilregler)
+   MOBILANPASSNING INDEX / CONTACT / ABOUT
 ========================== */
 @media (max-width: 768px) {
   /* Banner */
@@ -171,12 +169,12 @@ footer p {
     height: 120px;
   }
 
-  .banner-header .logo-banner {
-    height: 100%;
+  .logo-banner {
     width: auto;
+    height: 100%;
   }
 
-  /* Top tabs / flikar */
+  /* Top tabs / flikar lodrätt på mobil */
   .top-tabs {
     flex-direction: column;
     align-items: center;
@@ -195,7 +193,7 @@ footer p {
     padding: 15px;
   }
 
-  /* Image box */
+  /* Bildboxar */
   .image-box {
     height: 150px;
   }
@@ -206,8 +204,7 @@ footer p {
 }
 
 /* ==========================
-   MOBILE / SERVICES-SIDOR
-   Separat mobilblock för tjänstesidor
+   MOBILANPASSNING SERVICES-SIDOR
 ========================== */
 @media (max-width: 768px) {
   .services-grid {
@@ -217,6 +214,6 @@ footer p {
   }
 
   .service-box {
-    max-width: 90%; /* tar nästan hela bredden på mobil */
+    max-width: 90%;
   }
 }
