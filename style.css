@@ -1,133 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  background-color: #f5f8fa;
-  color: #333;
-  line-height: 1.6;
+/* ----------------- Header Banner ----------------- */
+.banner-header {
+  width: 100%;
+  height: 250px; /* Kan justeras efter önskemål */
+  overflow: hidden;
+  position: relative;
 }
 
-header .banner {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: linear-gradient(90deg, #004080, #0066cc);
-  color: white;
-  padding: 15px 30px;
+.logo-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fyller hela bannern utan att sträcka */
+}
+
+/* ----------------- Flikmeny ----------------- */
+.main-tabs {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-header .banner .logo { height: 60px; }
-
-.language-switch a {
+  background-color: #004aad; /* Professionell blå */
   color: white;
-  margin: 0 5px;
-  text-decoration: none;
-  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 18px;
 }
 
-.sidebar {
-  position: fixed;
-  top: 100px;
-  left: 0;
-  width: 220px;
-  background-color: #003366;
-  height: 100%;
-  padding-top: 20px;
-  transition: transform 0.3s ease;
-}
-
-.sidebar ul {
-  list-style-type: none;
+.main-tabs ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
   padding: 0;
 }
 
-.sidebar ul li a {
-  display: block;
+.main-tabs ul li a {
   color: white;
-  padding: 15px;
   text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s ease;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
 }
 
-.sidebar ul li a:hover {
-  background-color: #0059b3;
+.main-tabs ul li a:hover {
+  background-color: #003377;
+  border-radius: 5px;
 }
 
-main {
-  margin-left: 240px;
-  padding: 30px;
+.language-switch a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
 }
 
-.offers, .services, .about-section, .contact-section {
+.language-switch a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------- Erbjudanderutor ----------------- */
+.offers {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
-}
-
-.offer-card, .service-card, .about-card, .contact-card {
-  background-color: white;
-  border-radius: 10px;
+  gap: 15px;
+  justify-content: flex-start;
   padding: 20px;
-  flex: 1 1 calc(45% - 25px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.offer-card img, .about-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
+.offer-card {
+  flex: 1 1 calc(25% - 15px); /* Fyra kort per rad */
+  min-width: 180px;
+  background-color: #f0f4ff;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s;
 }
 
-.offer-card:hover, .service-card:hover, .about-card:hover, .contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-h3 {
-  color: #004080;
+.offer-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
   margin-bottom: 10px;
 }
 
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.offer-card h3 {
+  margin: 10px 0 5px;
 }
 
-form button {
-  background: linear-gradient(90deg, #004080, #0066cc);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s ease;
+.offer-card p {
+  font-size: 14px;
+  color: #333;
 }
 
-form button:hover {
-  background: linear-gradient(90deg, #0066cc, #004080);
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #004080;
-  color: white;
-  margin-top: 30px;
-}
-
-@media (max-width: 900px) {
-  main { margin-left: 0; padding: 20px; }
-  .offers, .services, .about-section, .contact-section { flex-direction: column; }
-  .sidebar { transform: translateX(-100%); position: fixed; }
+.offer-card:hover {
+  transform: translateY(-5px);
 }
