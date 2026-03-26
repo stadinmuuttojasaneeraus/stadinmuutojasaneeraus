@@ -70,7 +70,7 @@ body {
 }
 
 /* ==========================
-   SERVICES GRID
+   SERVICES GRID (Tjänstesidor)
 ========================== */
 .services-grid {
   display: flex;
@@ -90,7 +90,7 @@ body {
   font-size: 16px;
   display: inline-block;
   width: auto;
-  max-width: none;
+  max-width: 300px; /* maxbredd på mobil / små skärmar */
   transition: all 0.3s;
   text-align: center;
 }
@@ -165,6 +165,7 @@ footer p {
    MOBILE / RESPONSIVE
 ========================== */
 @media (max-width: 768px) {
+
   /* Banner */
   .banner-header {
     height: 120px;
@@ -188,11 +189,10 @@ footer p {
     font-size: 14px;
   }
 
-  /* Services grid / boxar */
-  .services-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
+  /* Main content */
+  .main-content {
+    margin: 10px;
+    padding: 15px;
   }
 
   /* Image box */
@@ -204,9 +204,14 @@ footer p {
     object-fit: cover;
   }
 
-  /* Main content padding */
-  .main-content {
-    margin: 10px;
-    padding: 15px;
+  /* Services grid för mobil */
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .service-box {
+    max-width: 90%; /* tar nästan hela bredden men med margin */
   }
 }
