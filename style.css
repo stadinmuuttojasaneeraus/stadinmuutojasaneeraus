@@ -40,23 +40,19 @@ header {
 
 /* ===== NAVIGATION ===== */
 nav {
-    background-color: #14213d; /* stark blå */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    background-color: #14213d; /* mörk blå */
 }
 
 nav a {
     color: #ffffff;
-    padding: 14px 20px;
+    padding: 15px 20px;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav a:hover {
     background-color: #f0a500;
-    color: #000000;
-    border-radius: 5px;
+    color: #000;
 }
 
 /* ===== HERO SECTION ===== */
