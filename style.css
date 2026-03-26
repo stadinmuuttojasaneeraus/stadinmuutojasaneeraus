@@ -67,10 +67,10 @@ body {
 .box {
   background-color: #004aad;
   color: white;
-  padding: 40px 20px;
+  padding: 25px 15px;  /* minskar höjd och padding */
   border-radius: 8px;
-  min-width: 150px;
-  flex: 1 1 180px;
+  min-width: 120px;    /* mindre än innan */
+  flex: 1 1 140px;     /* mindre bredd */
   text-align: center;
   font-weight: bold;
   cursor: pointer;
