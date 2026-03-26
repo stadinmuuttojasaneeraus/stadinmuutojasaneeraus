@@ -7,9 +7,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url('images/background.jpg');
-  background-size: cover;
-  background-position: center;
+  background: #f5f5f5;
 }
 
 /* ==========================
@@ -17,7 +15,7 @@ body {
 ========================== */
 .banner-header {
   width: 100%;
-  height: 150px; /* desktop höjd */
+  height: 150px; /* desktop */
   background: #fff;
   display: flex;
   justify-content: center;
@@ -27,7 +25,7 @@ body {
 .logo-banner {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* bevarar proportioner */
+  object-fit: contain;
 }
 
 /* ==========================
@@ -35,7 +33,7 @@ body {
 ========================== */
 .top-tabs {
   display: flex;
-  justify-content: center; /* vågrätt på desktop */
+  justify-content: center;
   align-items: center;
   gap: 15px;
   padding: 10px 0;
@@ -65,155 +63,4 @@ body {
   margin: auto;
   background: rgba(255,255,255,0.9);
   padding: 25px;
-  border-radius: 10px;
-}
-
-/* ==========================
-   IMAGE BOX
-========================== */
-.image-box {
-  width: 100%;
-  height: 200px;
-  background-color: #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  border-radius: 8px;
-}
-
-.image-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-.image-box img:hover {
-  transform: scale(1.05);
-}
-
-/* ==========================
-   CONTACT FORM
-========================== */
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 8px;
-  margin: 5px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-/* ==========================
-   FOOTER
-========================== */
-footer {
-  margin-top: auto;
-  background: #004aad;
-  color: #fff;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  border-top: 3px solid #002f75;
-}
-
-footer p {
-  margin: 0;
-}
-
-.language-switch {
-  position: static; /* låter flexbox styra placering */
-}
-
-/* ==========================
-   SERVICES GRID (Tjänstesidor)
-========================== */
-.services-grid {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.service-box {
-  background-color: #004aad;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  display: inline-block;
-  width: auto;
-  max-width: 300px; /* maxbredd */
-  transition: all 0.3s;
-  text-align: center;
-}
-
-.service-box:hover {
-  background-color: #002f75;
-  transform: scale(1.05);
-}
-
-/* ==========================
-   MOBILANPASSNING INDEX / CONTACT / ABOUT
-========================== */
-@media (max-width: 768px) {
-  /* Banner */
-  .banner-header {
-    height: 120px;
-  }
-
-  .logo-banner {
-    width: auto;
-    height: 100%;
-  }
-
-  /* Top tabs / flikar lodrätt på mobil */
-  .top-tabs {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin: 10px 0;
-  }
-
-  .top-tabs a {
-    padding: 8px 14px;
-    font-size: 14px;
-  }
-
-  /* Main content */
-  .main-content {
-    margin: 10px;
-    padding: 15px;
-  }
-
-  /* Bildboxar */
-  .image-box {
-    height: 150px;
-  }
-
-  .image-box img {
-    object-fit: cover;
-  }
-}
-
-/* ==========================
-   MOBILANPASSNING SERVICES-SIDOR
-========================== */
-@media (max-width: 768px) {
-  .services-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .service-box {
-    max-width: 90%;
-  }
-}
+  border-radius:
