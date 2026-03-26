@@ -185,3 +185,43 @@ footer {
     padding: 10px 15px;
   }
 }
+@media (max-width: 768px) {
+  /* Banner / logo */
+  .banner-header {
+    height: 120px;
+  }
+  .banner-header .logo-banner {
+    height: 100%;
+    width: auto;
+  }
+
+  /* Flikar centreras */
+  .top-tabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  .top-tabs a {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  /* Tjänsteboxar under varandra */
+  .services-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* Mindre image-box på mobil */
+  .image-box {
+    height: 150px;
+  }
+
+  /* Main content padding */
+  .main-content {
+    padding: 10px 15px;
+  }
+}
