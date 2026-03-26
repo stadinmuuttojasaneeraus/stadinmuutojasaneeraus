@@ -1,64 +1,44 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yhteystiedot</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yhteystiedot</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <div class="banner">
-    <img src="images/logo.png" alt="Logo" class="logo">
+  <!-- HEADER-BANNER -->
+  <header class="banner-header">
+    <img src="images/logo.png" alt="Logo" class="logo-banner">
+  </header>
+
+  <!-- BODY -->
+  <main class="body-section">
+
+    <!-- Huvudinnehåll -->
+    <section class="main-content">
+      <h1>Yhteystiedot</h1>
+      <p>Täällä voit lisätä yrityksesi yhteystiedot, puhelinnumeron, sähköpostin ja mahdollisen kartan.</p>
+    </section>
+
+    <!-- Flikar till höger -->
+    <aside class="offers-sidebar">
+      <div class="offer-card"><a href="services.html">Palvelut</a></div>
+      <div class="offer-card"><a href="contact.html">Yhteystiedot</a></div>
+      <div class="offer-card"><a href="about.html">Tietoa</a></div>
+      <div class="offer-card"><a href="offers.html">Tarjoukset</a></div>
+    </aside>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Yritys. Kaikki oikeudet pidätetään.</p>
     <div class="language-switch">
       <a href="#">SV</a> | <a href="#">EN</a>
     </div>
-    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
-  </div>
-</header>
-
-<aside class="sidebar">
-  <ul>
-    <li><a href="index.html">Etusivu</a></li>
-    <li><a href="services.html">Palvelut</a></li>
-    <li><a href="about.html">Tietoa</a></li>
-    <li><a href="#contact">Yhteystiedot</a></li>
-  </ul>
-</aside>
-
-<main>
-  <section id="contact" class="contact-section">
-
-    <div class="contact-card">
-      <h3>Ota yhteyttä sähköpostitse</h3>
-      <form action="https://formspree.io/f/yourformid" method="POST">
-        <input type="text" name="name" placeholder="Nimi" required>
-        <input type="email" name="email" placeholder="Sähköposti" required>
-        <textarea name="message" placeholder="Viesti" required></textarea>
-        <button type="submit">Lähetä</button>
-      </form>
-    </div>
-
-    <div class="contact-card">
-      <h3>Yhteystiedot</h3>
-      <p>Osoite: Yrityksen katu 1, Helsinki</p>
-      <p>Sähköposti: info@example.com</p>
-    </div>
-
-    <div class="contact-card">
-      <h3>Soita meille</h3>
-      <p><a href="tel:+358401234567">+358 40 1234567</a></p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1986.123456!2d24.945!3d60.1695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920a1234567890%3A0xabcdef!2sHelsinki!5e0!3m2!1sfi!2sfi!4v1234567890" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-
-  </section>
-</main>
-
-<footer>
-  &copy; 2026 Yrityksen nimi. Kaikki oikeudet pidätetään.
-</footer>
+  </footer>
 
 </body>
 </html>
