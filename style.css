@@ -1,16 +1,22 @@
 /* ===== BODY & FONTS ===== */
 body {
     margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a;  /* mörk bakgrund för maskulin känsla */
-    color: #e6e6e6;            /* ljus text */
+    background-color: #ffffff; /* vit bakgrund överallt */
+    color: #1a1a1a; /* mörk text */
+    font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: #ffffff; /* vit bakgrund */
-    padding: 20px 0;
+    background-color: #ffffff; /* vit header */
     text-align: center;
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #ffffff; /* vit footer */
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #e6e6e6; /* tunn linje för separation */
 }
 
 
@@ -90,15 +96,18 @@ nav a:hover {
 
 /* ===== CONTAINER & BOXES ===== */
 .container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
+    background-color: #ffffff; /* vit container */
+    padding: 40px 20px;
 }
 
 .flex {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flex .box {
+    flex: 1 1 30%; /* tre boxar per rad */
 }
 
 .box {
