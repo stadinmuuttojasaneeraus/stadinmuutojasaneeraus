@@ -1,7 +1,10 @@
-/* ----------------- Bakgrund ----------------- */
+/* ----------------- Body och layout ----------------- */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Footer längst ner */
   background-image: url('images/background.jpg'); /* Bakgrundsbild */
   background-size: cover;
   background-position: center;
@@ -9,25 +12,25 @@ body {
   color: #333;
 }
 
-
 /* ----------------- Header Banner ----------------- */
 .banner-header {
   width: 100%;
-  height: auto;               /* Låt bannern anpassa sig efter loggans höjd */
-  max-height: 120px;          /* Men sätt maxhöjd på 120px */
+  height: auto;       /* Anpassa efter loggans höjd */
+  max-height: 120px;  /* Maxhöjd */
   background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 0;            /* Lite luft ovanför/under */
+  padding: 10px 0;
 }
 
 .logo-banner {
-  width: 100%;                /* Fyller bredden */
-  height: auto;               /* Behåller proportioner */
-  max-height: 100%;           /* Stoppar loggan från att bli högre än bannern */
-  object-fit: contain;        /* Behåller proportioner */
+  width: 100%;        /* Fyller bredden */
+  height: auto;       /* Proportionell logga */
+  max-height: 100%;
+  object-fit: contain;
 }
+
 /* ----------------- Flikmeny ----------------- */
 .main-tabs {
   display: flex;
@@ -35,8 +38,10 @@ body {
   align-items: center;
   background-color: #004aad;
   color: white;
-  padding: 8px 20px;  /* Smalare */
+  padding: 8px 20px;
   font-size: 16px;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .main-tabs ul {
@@ -50,7 +55,7 @@ body {
 .main-tabs ul li a {
   color: white;
   text-decoration: none;
-  padding: 5px 10px; /* Kompakt */
+  padding: 5px 10px;
   transition: background 0.3s;
 }
 
@@ -69,8 +74,9 @@ body {
   text-decoration: underline;
 }
 
-/* ----------------- Body Section ----------------- */
-.body-section {
+/* ----------------- Huvudinnehåll ----------------- */
+main.body-section {
+  flex: 1; /* Tar upp resterande utrymme mellan flikmeny och footer */
   display: flex;
   gap: 20px;
   padding: 20px;
@@ -85,7 +91,7 @@ body {
 }
 
 .offer-card {
-  background-color: rgba(255, 255, 255, 0.9); /* Lätt transparent */
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   padding: 10px;
   text-align: center;
@@ -128,6 +134,5 @@ footer {
   color: white;
   text-align: center;
   padding: 15px 0;
-  margin-top: 20px;
   font-size: 14px;
 }
