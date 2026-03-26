@@ -31,12 +31,13 @@ body {
   object-fit: contain;
 }
 
-/* ----------------- Huvudinnehåll ----------------- */
+/* ----------------- Body Section ----------------- */
 main.body-section {
   flex: 1;
   display: flex;
   gap: 20px;
   padding: 20px;
+  flex-wrap: wrap; /* Gör layout flexibel vid låg höjd */
 }
 
 /* ----------------- Erbjudande-flikar ----------------- */
@@ -45,9 +46,12 @@ main.body-section {
   flex-direction: column;
   gap: 15px;
   min-width: 150px;
+  flex-wrap: wrap;
 }
 
 .offer-card {
+  flex: 1 1 150px;
+  max-width: 200px;
   background-color: rgba(0, 74, 173, 0.8);
   border-radius: 8px;
   text-align: center;
@@ -85,7 +89,7 @@ footer {
   position: relative;
 }
 
-/* ----------------- Språkval längst ner i högra hörnet ----------------- */
+/* ----------------- Språkval längst ner till höger ----------------- */
 footer .language-switch {
   position: absolute;
   right: 20px;
@@ -103,10 +107,10 @@ footer .language-switch a:hover {
 }
 
 /* ----------------- Mobilanpassning ----------------- */
-@media (max-width: 768px) {
-
+@media (max-width: 768px), (max-height: 500px) {
   main.body-section {
     flex-direction: column;
+    align-items: center;
     padding: 15px;
   }
 
@@ -115,7 +119,6 @@ footer .language-switch a:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    min-width: 0;
   }
 
   .offer-card {
