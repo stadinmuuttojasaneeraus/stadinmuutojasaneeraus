@@ -62,24 +62,25 @@ body {
 
 /* Grid-layout för tjänsterna */
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* mindre min-width */
+  display: flex;
+  justify-content: center;   /* centrera */
   gap: 15px;
+  flex-wrap: wrap;           /* mobilanpassning */
   margin-top: 20px;
-  justify-items: center; /* centrerar rutorna i grid */
 }
 
 .service-box {
   background-color: #004aad;
   color: white;
-  padding: 25px 15px;    /* mindre padding än tidigare */
-  text-align: center;
-  font-weight: bold;
-  border-radius: 8px;
+  padding: 8px 16px;          /* samma som flikarna */
+  border-radius: 5px;
   text-decoration: none;
-  width: 100%;
-  max-width: 180px;       /* max bredd för att inte bli klumpig */
-  transition: transform 0.3s, background 0.3s;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;      /* gör dem som knappar */
+  width: auto;                /* tar bort full bredd */
+  max-width: none;            /* ingen begränsning */
+  transition: all 0.3s;
 }
 
 .service-box:hover {
