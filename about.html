@@ -2,47 +2,52 @@
 <html lang="fi">
 <head>
 <meta charset="UTF-8">
-<title>Tietoa meistä</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tietoa</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
 
-<div class="main-container">
-
 <header>
-  <img src="images/logo.jpg" alt="Företagslogga" class="full-logo">
+  <div class="banner">
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <div class="language-switch">
+      <a href="#">SV</a> | <a href="#">EN</a>
+    </div>
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+  </div>
 </header>
 
-<nav>
-<a href="index.html">Etusivu</a>
-<a href="about.html">Tietoa meistä</a>
-<a href="services.html">Palvelut</a>
-<a href="contact.html">Yhteystiedot</a>
-</nav>
+<aside class="sidebar">
+  <ul>
+    <li><a href="index.html">Etusivu</a></li>
+    <li><a href="services.html">Palvelut</a></li>
+    <li><a href="#about">Tietoa</a></li>
+    <li><a href="contact.html">Yhteystiedot</a></li>
+  </ul>
+</aside>
 
-<div class="container">
-<h2>Tietoa meistä</h2>
-<p>Olemme ammattimainen yritys, joka tarjoaa korkealaatuisia palveluja yrityksille ja yksityishenkilöille.</p>
-<p>Tavoitteenamme on tarjota luotettavia ratkaisuja ja erinomaista asiakaspalvelua.</p>
+<main>
+  <section id="about" class="about-section">
+    <div class="about-card">
+      <img src="images/offer1.jpg" alt="Yritys 1">
+      <p>Yrityksemme missio on tarjota laadukkaita palveluita asiakkaillemme.</p>
+    </div>
+    <div class="about-card">
+      <img src="images/offer2.jpg" alt="Yritys 2">
+      <p>Arvomme perustuvat luotettavuuteen, ammattimaisuuteen ja laatuun.</p>
+    </div>
+    <div class="about-card">
+      <img src="images/offer3.jpg" alt="Yritys 3">
+      <p>Tiimimme koostuu kokeneista ammattilaisista eri aloilta.</p>
+    </div>
+  </section>
+</main>
 
-<div class="flex">
-<div class="box">
-<h3>Kokemus</h3>
-<p>Yli 10 vuoden kokemus muuttopalveluista ja siivouksesta.</p>
-</div>
-<div class="box">
-<h3>Laatu</h3>
-<p>Kaikki palvelut suoritetaan korkeimmalla laadulla ja tarkkuudella.</p>
-</div>
-<div class="box">
-<h3>Luotettavuus</h3>
-<p>Voit luottaa, että työ tehdään sovitusti ja ajallaan.</p>
-</div>
-</div>
-</div>
+<footer>
+  &copy; 2026 Yrityksen nimi. Kaikki oikeudet pidätetään.
+</footer>
 
-<footer>© 2026 Yrityksen nimi | <a href="contact.html">Ota yhteyttä</a></footer>
-
-</div>
 </body>
 </html>
