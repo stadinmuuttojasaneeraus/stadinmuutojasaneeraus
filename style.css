@@ -70,37 +70,6 @@ body {
 }
 
 /* ==========================
-   SERVICES GRID (Tjänstesidor)
-========================== */
-.services-grid {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.service-box {
-  background-color: #004aad;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  display: inline-block;
-  width: auto;
-  max-width: 300px; /* maxbredd på mobil / små skärmar */
-  transition: all 0.3s;
-  text-align: center;
-}
-
-.service-box:hover {
-  background-color: #002f75;
-  transform: scale(1.05);
-}
-
-/* ==========================
    IMAGE BOX
 ========================== */
 .image-box {
@@ -162,10 +131,41 @@ footer p {
 }
 
 /* ==========================
+   SERVICES GRID (Tjänstesidor)
+========================== */
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.service-box {
+  background-color: #004aad;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  width: auto;
+  max-width: 300px; /* maxbredd för små skärmar */
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.service-box:hover {
+  background-color: #002f75;
+  transform: scale(1.05);
+}
+
+/* ==========================
    MOBILE / RESPONSIVE
+   För index, contact, about (ursprungliga mobilregler)
 ========================== */
 @media (max-width: 768px) {
-
   /* Banner */
   .banner-header {
     height: 120px;
@@ -203,8 +203,13 @@ footer p {
   .image-box img {
     object-fit: cover;
   }
+}
 
-  /* Services grid för mobil */
+/* ==========================
+   MOBILE / SERVICES-SIDOR
+   Separat mobilblock för tjänstesidor
+========================== */
+@media (max-width: 768px) {
   .services-grid {
     flex-direction: column;
     align-items: center;
@@ -212,6 +217,6 @@ footer p {
   }
 
   .service-box {
-    max-width: 90%; /* tar nästan hela bredden men med margin */
+    max-width: 90%; /* tar nästan hela bredden på mobil */
   }
 }
