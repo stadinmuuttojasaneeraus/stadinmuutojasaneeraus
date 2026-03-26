@@ -1,18 +1,18 @@
 /* ----------------- Header Banner ----------------- */
 .banner-header {
   width: 100%;
-  height: 120px;              /* Lägre banner */
+  height: 180px;              
   overflow: hidden;
   position: relative;
-  background-color: #ffffff;  /* Vit bakgrund */
+  background-color: #ffffff;  
   display: flex;
-  align-items: center;        /* Vertikal centrering av logga */
-  justify-content: center;    /* Horisontell centrering av logga */
+  align-items: center;        
+  justify-content: center;    
 }
 
 .logo-banner {
-  max-height: 100%;           /* Anpassar loggan till bannerns höjd */
-  width: auto;                /* Behåller proportioner */
+  max-height: 100%;           
+  width: auto;                
   object-fit: contain;
 }
 
@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #004aad; /* Professionell blå */
+  background-color: #004aad; 
   color: white;
   padding: 15px 20px;
   font-size: 18px;
@@ -57,7 +57,46 @@
   text-decoration: underline;
 }
 
-/* ----------------- Erbjudanderutor ----------------- */
+/* ----------------- Stora huvudflikar ----------------- */
+.main-flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.flag-card {
+  flex: 1 1 calc(30% - 20px); 
+  min-width: 250px;
+  background-color: #f0f4ff;
+  border-radius: 10px;
+  padding: 40px 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.flag-card a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+}
+
+.flag-card a:hover {
+  transform: translateY(-5px);
+}
+
+.flag-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.flag-card p {
+  font-size: 16px;
+}
+
+/* ----------------- Små erbjudanderutor ----------------- */
 .offers {
   display: flex;
   flex-wrap: wrap;
@@ -67,25 +106,24 @@
 }
 
 .offer-card {
-  flex: 1 1 calc(25% - 15px); /* Fyra kort per rad */
+  flex: 1 1 calc(25% - 15px); 
   min-width: 180px;
-  background-color: #f0f4ff;
+  background-color: #ffffff;
   border-radius: 8px;
   padding: 10px;
   text-align: center;
   transition: transform 0.3s;
 }
 
-/* Gör hela kortet klickbart */
 .offer-card a {
   display: block;
-  color: inherit;         /* Behåll textfärg */
-  text-decoration: none;  /* Ta bort understrykning */
-  height: 100%;           /* Täcker hela kortet */
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
 }
 
 .offer-card a:hover {
-  transform: translateY(-5px); /* Hover-effekt */
+  transform: translateY(-5px);
 }
 
 .offer-card img {
