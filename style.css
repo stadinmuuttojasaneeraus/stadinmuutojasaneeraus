@@ -1,30 +1,26 @@
-/* ===== BODY & FONTS ===== */
+/* ===============================
+   GLOBALA INSTÄLLNINGAR
+   =============================== */
 body {
     margin: 0;
-    background-color: #ffffff; /* vit bakgrund överallt */
-    color: #1a1a1a; /* mörk text */
+    background-color: #ffffff;
+    color: #1a1a1a;
     font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #ffffff; /* vit header */
-    text-align: center;
-    padding: 20px 0;
+h1, h2, h3 {
+    margin: 10px 0;
 }
 
-footer {
-    background-color: #ffffff; /* vit footer */
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #e6e6e6; /* tunn linje för separation */
-}
-
-
+/* ===============================
+   HEADER MED FULLBREDDSLOGGA
+   =============================== */
 header {
     width: 100%;
-    height: 250px; /* justera höjd */
+    height: 250px; /* justera höjd efter behov */
     overflow: hidden;
-    background-color: #ffffff; /* vit bakgrund */
+    background-color: #ffffff;
+    text-align: center;
 }
 
 header .full-logo {
@@ -34,14 +30,14 @@ header .full-logo {
     display: block;
 }
 
-.language-switch {
-    margin-top: 10px;
-    font-size: 18px; /* storlek på språkvalet */
-}
-
-/* ===== NAVIGATION ===== */
+/* ===============================
+   NAVIGATION
+   =============================== */
 nav {
-    background-color: #14213d; /* mörk blå */
+    background-color: #14213d;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -53,46 +49,40 @@ nav a {
 
 nav a:hover {
     background-color: #f0a500;
-    color: #000;
+    color: black;
 }
 
-/* ===== HERO SECTION ===== */
+/* ===============================
+   HERO / STARTBILD
+   =============================== */
 .hero {
-    background-color: #1f2a38; /* mörk sektion */
-    text-align: center;
-    padding: 80px 20px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    margin-bottom: 40px;
 }
 
-.hero h2 {
-    font-size: 2.8em;
-    margin-bottom: 20px;
+.hero h1 {
+    font-size: 40px;
+    margin: 0;
 }
 
 .hero p {
-    font-size: 1.3em;
-    margin-bottom: 30px;
+    font-size: 22px;
 }
 
-.hero .btn {
-    background-color: #f0a500;
-    color: #000;
-    padding: 15px 35px;
-    font-size: 1.1em;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.hero .btn:hover {
-    background-color: #d18e00;
-}
-
-/* ===== CONTAINER & BOXES ===== */
+/* ===============================
+   CONTAINER & FLEXBOX
+   =============================== */
 .container {
-    background-color: #ffffff; /* vit container */
     padding: 40px 20px;
+    background-color: #ffffff;
 }
 
 .flex {
@@ -102,117 +92,68 @@ nav a:hover {
 }
 
 .flex .box {
-    flex: 1 1 30%; /* tre boxar per rad */
-}
-
-.box {
-    background-color: #0d1a26;
-    padding: 25px;
-    margin: 10px;
     flex: 1 1 30%;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    background-color: #14213d;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.box h3 {
-    margin-bottom: 15px;
-    font-size: 1.5em;
-    color: #f0a500;
-}
-
-.box p {
-    font-size: 1em;
-    line-height: 1.5em;
-}
-
-/* ===== CTA ===== */
+/* ===============================
+   CTA / PRISER OCH ERBJUDANDE
+   =============================== */
 .cta {
     background-color: #14213d;
-    padding: 50px 20px;
-    text-align: center;
+    color: white;
+    padding: 20px;
     border-radius: 10px;
+    margin: 15px 0;
 }
 
 .cta h2 {
-    font-size: 2em;
-    margin-bottom: 15px;
+    font-size: 24px;
 }
 
 .cta p {
-    font-size: 1.2em;
-    margin-bottom: 25px;
+    font-size: 18px;
 }
 
-.cta .btn {
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
     background-color: #f0a500;
     color: #000;
-    padding: 15px 30px;
-    font-weight: bold;
-    font-size: 1.1em;
-    border-radius: 5px;
     text-decoration: none;
-}
-
-.cta .btn:hover {
-    background-color: #d18e00;
-}
-
-/* ===== FORMS ===== */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-form input, form textarea {
-    padding: 12px;
-    border-radius: 5px;
-    border: none;
-    font-size: 1em;
-}
-
-form button {
-    background-color: #f0a500;
-    color: #000;
-    padding: 15px;
-    font-size: 1.1em;
     font-weight: bold;
-    border: none;
     border-radius: 5px;
-    cursor: pointer;
+    margin-top: 15px;
 }
 
-form button:hover {
-    background-color: #d18e00;
+.btn:hover {
+    background-color: #ffbf47;
 }
 
-/* ===== FOOTER ===== */
+/* ===============================
+   FOOTER
+   =============================== */
 footer {
-    background-color: #0d1a26;
+    background-color: #ffffff;
     text-align: center;
-    color: #ffffff;
-    padding: 25px 10px;
-    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #e6e6e6;
 }
 
-/* ===== IMAGES ===== */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* ===== RESPONSIVE ===== */
+/* ===============================
+   RESPONSIVT
+   =============================== */
 @media (max-width: 768px) {
-    .flex {
-        flex-direction: column;
+    .flex .box {
+        flex: 1 1 100%;
     }
-    nav {
-        flex-direction: column;
+    .hero h1 {
+        font-size: 28px;
     }
-    .hero h2 {
-        font-size: 2em;
+    .hero p {
+        font-size: 18px;
     }
 }
