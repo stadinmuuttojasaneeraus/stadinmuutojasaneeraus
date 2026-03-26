@@ -1,7 +1,7 @@
 /* ----------------- Header Banner ----------------- */
 .banner-header {
   width: 100%;
-  height: 250px; /* Kan justeras efter önskemål */
+  height: 180px; /* Kan justeras efter önskemål */
   overflow: hidden;
   position: relative;
 }
