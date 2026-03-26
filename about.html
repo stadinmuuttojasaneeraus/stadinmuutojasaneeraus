@@ -1,53 +1,44 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tietoa</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tietoa</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <div class="banner">
-    <img src="images/logo.png" alt="Logo" class="logo">
+  <!-- HEADER-BANNER -->
+  <header class="banner-header">
+    <img src="images/logo.png" alt="Logo" class="logo-banner">
+  </header>
+
+  <!-- BODY -->
+  <main class="body-section">
+
+    <!-- Huvudinnehåll -->
+    <section class="main-content">
+      <h1>Tietoa yrityksestämme</h1>
+      <p>Tässä voit kertoa yrityksestäsi, sen historiasta ja lisätä kuvia, jotka esittelevät toimintaasi.</p>
+    </section>
+
+    <!-- Flikar till höger -->
+    <aside class="offers-sidebar">
+      <div class="offer-card"><a href="services.html">Palvelut</a></div>
+      <div class="offer-card"><a href="contact.html">Yhteystiedot</a></div>
+      <div class="offer-card"><a href="about.html">Tietoa</a></div>
+      <div class="offer-card"><a href="offers.html">Tarjoukset</a></div>
+    </aside>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Yritys. Kaikki oikeudet pidätetään.</p>
     <div class="language-switch">
       <a href="#">SV</a> | <a href="#">EN</a>
     </div>
-    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
-  </div>
-</header>
-
-<aside class="sidebar">
-  <ul>
-    <li><a href="index.html">Etusivu</a></li>
-    <li><a href="services.html">Palvelut</a></li>
-    <li><a href="#about">Tietoa</a></li>
-    <li><a href="contact.html">Yhteystiedot</a></li>
-  </ul>
-</aside>
-
-<main>
-  <section id="about" class="about-section">
-    <div class="about-card">
-      <img src="images/offer1.jpg" alt="Yritys 1">
-      <p>Yrityksemme missio on tarjota laadukkaita palveluita asiakkaillemme.</p>
-    </div>
-    <div class="about-card">
-      <img src="images/offer2.jpg" alt="Yritys 2">
-      <p>Arvomme perustuvat luotettavuuteen, ammattimaisuuteen ja laatuun.</p>
-    </div>
-    <div class="about-card">
-      <img src="images/offer3.jpg" alt="Yritys 3">
-      <p>Tiimimme koostuu kokeneista ammattilaisista eri aloilta.</p>
-    </div>
-  </section>
-</main>
-
-<footer>
-  &copy; 2026 Yrityksen nimi. Kaikki oikeudet pidätetään.
-</footer>
+  </footer>
 
 </body>
 </html>
