@@ -1,72 +1,54 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Etusivu</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yritys – Etusivu</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Header / Banner -->
-<header>
-  <div class="banner">
-    <img src="images/logo.png" alt="Logo" class="logo">
+  <!-- HEADER-BANNER -->
+  <header class="banner-header">
+    <img src="images/logo.png" alt="Logo" class="logo-banner">
+  </header>
+
+  <!-- NAV-FLIKAR OCH SPRÅKVAL -->
+  <nav class="main-tabs">
+    <ul>
+      <li><a href="#offers">Tarjoukset</a></li>
+      <li><a href="services.html">Palvelut</a></li>
+      <li><a href="about.html">Tietoa</a></li>
+      <li><a href="contact.html">Yhteystiedot</a></li>
+    </ul>
     <div class="language-switch">
       <a href="#">SV</a> | <a href="#">EN</a>
     </div>
-    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
-  </div>
-</header>
+  </nav>
 
-<!-- Sidomeny -->
-<aside class="sidebar">
-  <ul>
-    <li><a href="#hero">Etusivu</a></li>
-    <li><a href="services.html">Palvelut</a></li>
-    <li><a href="about.html">Tietoa</a></li>
-    <li><a href="contact.html">Yhteystiedot</a></li>
-  </ul>
-</aside>
-
-<!-- Hero Banner -->
-<section id="hero" class="hero-banner">
-  <h1>Tervetuloa yritykseemme!</h1>
-  <p>Laadukkaita palveluja sinulle ja yrityksellesi</p>
-  <a href="#offers" class="btn">Tutustu tarjouksiin</a>
-</section>
-
-<!-- Erbjudanderutor -->
-<main>
-  <section id="offers" class="offers">
+  <!-- ERBJUDANDERUTOR -->
+  <section class="offers" id="offers">
     <div class="offer-card">
-      <i class="fas fa-lightbulb fa-3x"></i>
+      <img src="images/offer1.png" alt="Tarjous 1">
       <h3>Tarjous 1</h3>
-      <p>Kuvaus tarjouksesta 1, joka houkuttelee asiakkaita.</p>
+      <p>Lyhyt kuvaus tarjouksesta.</p>
     </div>
     <div class="offer-card">
-      <i class="fas fa-briefcase fa-3x"></i>
+      <img src="images/offer2.png" alt="Tarjous 2">
       <h3>Tarjous 2</h3>
-      <p>Kuvaus tarjouksesta 2, ammattimainen ja selkeä.</p>
+      <p>Lyhyt kuvaus tarjouksesta.</p>
     </div>
     <div class="offer-card">
-      <i class="fas fa-star fa-3x"></i>
+      <img src="images/offer3.png" alt="Tarjous 3">
       <h3>Tarjous 3</h3>
-      <p>Kuvaus tarjouksesta 3, visuaalisesti houkutteleva.</p>
+      <p>Lyhyt kuvaus tarjouksesta.</p>
     </div>
     <div class="offer-card">
-      <i class="fas fa-handshake fa-3x"></i>
+      <img src="images/offer4.png" alt="Tarjous 4">
       <h3>Tarjous 4</h3>
-      <p>Kuvaus tarjouksesta 4, luotettava ja ammattimainen.</p>
+      <p>Lyhyt kuvaus tarjouksesta.</p>
     </div>
   </section>
-</main>
-
-<footer>
-  &copy; 2026 Yrityksen nimi. Kaikki oikeudet pidätetään.
-</footer>
 
 </body>
 </html>
