@@ -11,19 +11,20 @@ body {
     color: #14213d;
 }
 
-/* ===== HEADER ===== */
 header {
     width: 100%;
-    height: 250px; /* justera höjd efter behov */
+    height: 200px; /* justera efter loggans höjd */
+    background-color: #ffffff; /* vit bakgrund */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    background-color: #ffffff;
-    text-align: center;
 }
 
 header .full-logo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* fyller hela headern utan att sträcka fel */
+    max-width: 90%; /* loggan får plats inom header */
+    max-height: 100%;
+    object-fit: contain; /* hela loggan syns, ingen beskärning */
     display: block;
 }
 
