@@ -1,15 +1,19 @@
 /* ----------------- Header Banner ----------------- */
 .banner-header {
   width: 100%;
-  height: 180px; /* Kan justeras efter önskemål */
+  height: 120px;              /* Lägre banner */
   overflow: hidden;
   position: relative;
+  background-color: #ffffff;  /* Vit bakgrund */
+  display: flex;
+  align-items: center;        /* Vertikal centrering av logga */
+  justify-content: center;    /* Horisontell centrering av logga */
 }
 
 .logo-banner {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Fyller hela bannern utan att sträcka */
+  max-height: 100%;           /* Anpassar loggan till bannerns höjd */
+  width: auto;                /* Behåller proportioner */
+  object-fit: contain;
 }
 
 /* ----------------- Flikmeny ----------------- */
@@ -72,6 +76,18 @@
   transition: transform 0.3s;
 }
 
+/* Gör hela kortet klickbart */
+.offer-card a {
+  display: block;
+  color: inherit;         /* Behåll textfärg */
+  text-decoration: none;  /* Ta bort understrykning */
+  height: 100%;           /* Täcker hela kortet */
+}
+
+.offer-card a:hover {
+  transform: translateY(-5px); /* Hover-effekt */
+}
+
 .offer-card img {
   width: 80px;
   height: 80px;
@@ -86,8 +102,4 @@
 .offer-card p {
   font-size: 14px;
   color: #333;
-}
-
-.offer-card:hover {
-  transform: translateY(-5px);
 }
