@@ -2,55 +2,89 @@
 <html lang="fi">
 <head>
 <meta charset="UTF-8">
-<title>Yhteystiedot</title>
+<title>Yhteystiedot – Stadin muutto ja saneeraus palvelut OY</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="main-container">
-
+<!-- HEADER -->
 <header>
-  <div class="logo-header"></div>  <!-- logotyp som bakgrund -->
-
-  <div class="header-content">
-      <h1>Tervetuloa!</h1>
-      <div class="language-switch">
-          <a href="index.html">FI</a> |
-          <a href="index_sv.html">SV</a> |
-          <a href="index_en.html">EN</a>
-      </div>
-  </div>
+    <img src="images/banner.jpg" alt="Banner Logga">
 </header>
 
+<!-- SPRÅK -->
+<div class="lang-switch">
+    <a href="index_fi.html">FI</a> | 
+    <a href="index_sv.html">SV</a> | 
+    <a href="index_en.html">EN</a>
+</div>
+
+<!-- NAV -->
 <nav>
-<a href="index.html">Etusivu</a>
-<a href="about.html">Tietoa meistä</a>
-<a href="services.html">Palvelut</a>
-<a href="contact.html">Yhteystiedot</a>
+    <a href="index_fi.html">Koti</a>
+    <a href="services_fi.html">Palvelut</a>
+    <a href="contact_fi.html">Yhteystiedot</a>
 </nav>
 
+<!-- HERO -->
+<div class="hero" style="background-image: url('images/contact.jpg');">
+    <h1>Ota yhteyttä</h1>
+    <p>Pyydä tarjous tai kysy lisää palveluistamme</p>
+</div>
+
+<!-- CONTENT -->
 <div class="container">
-<h2>Ota yhteyttä</h2>
 
-<form action="https://formspree.io/f/your-id" method="POST">
-<input type="text" name="name" placeholder="Nimi" required>
-<input type="email" name="email" placeholder="Sähköposti" required>
-<textarea name="message" rows="5" placeholder="Viesti" required></textarea>
-<button type="submit">Lähetä</button>
-</form>
+    <h2>Yhteystiedot</h2>
 
-<h3>Sijaintimme</h3>
-<iframe 
-src="https://www.google.com/maps?q=Helsinki&output=embed"
-width="100%" 
-height="300" 
-style="border:0; border-radius:10px; margin-top:20px;">
-</iframe>
+    <div class="flex">
+
+        <!-- Kontakt info -->
+        <div class="box">
+            <h3>Ota yhteyttä</h3>
+
+            <p><strong>Puhelin:</strong><br>
+            <a href="tel:+358401234567">+358 40 123 4567</a></p>
+
+            <p><strong>Sähköposti:</strong><br>
+            <a href="mailto:info@stadinmuutto.fi">info@stadinmuutto.fi</a></p>
+
+            <p><strong>Osoite:</strong><br>
+            Esimerkkikatu 1<br>
+            00100 Helsinki</p>
+        </div>
+
+        <!-- Kontaktformulär -->
+        <div class="box">
+            <h3>Lähetä viesti</h3>
+
+            <form>
+                <input type="text" placeholder="Nimi" required>
+                <input type="email" placeholder="Sähköposti" required>
+                <textarea placeholder="Viesti" rows="5" required></textarea>
+                <button type="submit">Lähetä</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- GOOGLE MAPS -->
+    <div class="map">
+        <iframe 
+            src="https://www.google.com/maps?q=Helsinki&output=embed"
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
 
 </div>
 
-<footer>© 2026 Yrityksen nimi | <a href="contact.html">Ota yhteyttä</a></footer>
+<footer>
+© 2026 Stadin muutto ja saneeraus palvelut OY
+</footer>
 
-</div>
 </body>
 </html>
