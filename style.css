@@ -81,7 +81,35 @@ body {
   background-color: #002f75;
   transform: scale(1.05);
 }
+/* PHOTO + TEXT WINDOW */
+.photo-text-window {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* bryts på mobil */
+  margin-top: 20px;
+}
 
+.image-box {
+  flex: 1 1 300px;       /* tar ungefär hälften på desktop */
+  max-width: 400px;
+  height: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.text-box {
+  flex: 2 1 300px;       /* större del för text */
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+}
 /* FOOTER / SPRÅKVAL */
 footer {
   margin-top: auto;
@@ -106,10 +134,11 @@ footer {
 }
 /* MOBILANPASSNING */
 @media (max-width: 768px) {
+  /* Flikarna på rad */
   .top-tabs {
-    flex-direction: row;   /* flikarna ligger på rad */
+    flex-direction: row; 
     justify-content: center;
-    flex-wrap: wrap;       /* bryts till nästa rad vid behov */
+    flex-wrap: wrap; 
     gap: 10px;
   }
 
@@ -118,20 +147,25 @@ footer {
     font-size: 14px;
   }
 
-  /* Rutorna under varandra */
-  .boxes-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .box {
-    width: 80%;
-    max-width: 200px;
-    margin-bottom: 10px;
-  }
-
+  /* Main content padding */
   .main-content {
     padding: 15px 10px;
+  }
+
+  /* Text + foto-fönster staplas på mobil */
+  .photo-text-window {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .image-box,
+  .text-box {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .image-box {
+    height: 200px; /* mindre höjd på mobilen */
   }
 }
