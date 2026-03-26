@@ -128,3 +128,32 @@ footer {
     padding: 20px;
     background: #ffffff;
 }
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    padding: 10px;
+    background: #f0a500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* MAP */
+.map {
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+}
