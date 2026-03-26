@@ -106,19 +106,19 @@ footer {
 }
 /* MOBILANPASSNING */
 @media (max-width: 768px) {
-  /* Flikarna centreras och staplas vertikalt */
   .top-tabs {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;   /* flikarna ligger på rad */
+    justify-content: center;
+    flex-wrap: wrap;       /* bryts till nästa rad vid behov */
     gap: 10px;
   }
 
   .top-tabs a {
-    padding: 8px 14px;
+    padding: 8px 12px;
     font-size: 14px;
   }
 
-  /* Rutorna staplas under varandra */
+  /* Rutorna under varandra */
   .boxes-container {
     flex-direction: column;
     align-items: center;
@@ -126,12 +126,11 @@ footer {
   }
 
   .box {
-    width: 90%;
-    max-width: 250px;
+    width: 80%;
+    max-width: 200px;
     margin-bottom: 10px;
   }
 
-  /* Main-content padding mindre */
   .main-content {
     padding: 15px 10px;
   }
