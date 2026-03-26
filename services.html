@@ -1,62 +1,44 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Palvelut</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palvelut</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <div class="banner">
-    <img src="images/logo.png" alt="Logo" class="logo">
+  <!-- HEADER-BANNER -->
+  <header class="banner-header">
+    <img src="images/logo.png" alt="Logo" class="logo-banner">
+  </header>
+
+  <!-- BODY -->
+  <main class="body-section">
+
+    <!-- Huvudinnehåll -->
+    <section class="main-content">
+      <h1>Palvelumme</h1>
+      <p>Täällä voit esitellä eri palveluita, kuvauksia ja kuvia. Esimerkiksi siivous, kiinteistönhoito, huoltopalvelut jne.</p>
+    </section>
+
+    <!-- Flikar till höger -->
+    <aside class="offers-sidebar">
+      <div class="offer-card"><a href="services.html">Palvelut</a></div>
+      <div class="offer-card"><a href="contact.html">Yhteystiedot</a></div>
+      <div class="offer-card"><a href="about.html">Tietoa</a></div>
+      <div class="offer-card"><a href="offers.html">Tarjoukset</a></div>
+    </aside>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Yritys. Kaikki oikeudet pidätetään.</p>
     <div class="language-switch">
       <a href="#">SV</a> | <a href="#">EN</a>
     </div>
-    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
-  </div>
-</header>
-
-<aside class="sidebar">
-  <ul>
-    <li><a href="index.html">Etusivu</a></li>
-    <li><a href="#services">Palvelut</a></li>
-    <li><a href="about.html">Tietoa</a></li>
-    <li><a href="contact.html">Yhteystiedot</a></li>
-  </ul>
-</aside>
-
-<main>
-  <section id="services" class="services">
-    <div class="service-card">
-      <i class="fas fa-cogs fa-3x"></i>
-      <h3>Palvelu 1</h3>
-      <p>Tiedot palvelusta 1, ammattimainen ja selkeä.</p>
-    </div>
-    <div class="service-card">
-      <i class="fas fa-paint-brush fa-3x"></i>
-      <h3>Palvelu 2</h3>
-      <p>Tiedot palvelusta 2, visuaalisesti houkutteleva.</p>
-    </div>
-    <div class="service-card">
-      <i class="fas fa-chart-line fa-3x"></i>
-      <h3>Palvelu 3</h3>
-      <p>Tiedot palvelusta 3, liiketoimintalähtöinen.</p>
-    </div>
-    <div class="service-card">
-      <i class="fas fa-headset fa-3x"></i>
-      <h3>Palvelu 4</h3>
-      <p>Tiedot palvelusta 4, asiakastuki ja palvelu.</p>
-    </div>
-  </section>
-</main>
-
-<footer>
-  &copy; 2026 Yrityksen nimi. Kaikki oikeudet pidätetään.
-</footer>
+  </footer>
 
 </body>
 </html>
