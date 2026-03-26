@@ -1,3 +1,6 @@
+/* ==========================
+   BODY
+========================== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -9,7 +12,9 @@ body {
   background-position: center;
 }
 
-/* HEADER */
+/* ==========================
+   HEADER / BANNER
+========================== */
 .banner-header {
   width: 100%;
   max-height: 120px;
@@ -25,20 +30,22 @@ body {
   object-fit: contain;
 }
 
-/* NAV */
+/* ==========================
+   NAV / TOP TABS
+========================== */
 .top-tabs {
   display: flex;
-  justify-content: center; /* centrerar horisontellt */
-  align-items: center;     /* vertikal centering */
-  gap: 15px;               /* avstånd mellan flikarna */
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
   padding: 10px 0;
-  flex-wrap: wrap;         /* bryts snyggt på små skärmar */
+  flex-wrap: wrap;
 }
 
 .top-tabs a {
   background-color: #004aad;
   color: white;
-  padding: 8px 16px;       /* mindre padding för mindre flik */
+  padding: 8px 16px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
@@ -48,10 +55,12 @@ body {
 
 .top-tabs a:hover {
   background-color: #002f75;
-  transform: scale(1.05); /* lätt hover-effekt */
+  transform: scale(1.05);
 }
 
-/* MAIN */
+/* ==========================
+   MAIN CONTENT
+========================== */
 .main-content {
   max-width: 900px;
   margin: auto;
@@ -59,57 +68,41 @@ body {
   padding: 25px;
   border-radius: 10px;
 }
-/* Grid-layout för tjänsterna */
+
+/* ==========================
+   SERVICES GRID
+========================== */
 .services-grid {
   display: flex;
-  justify-content: center;   /* centrera */
+  justify-content: center;
   gap: 15px;
-  flex-wrap: wrap;           /* mobilanpassning */
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 
 .service-box {
   background-color: #004aad;
   color: white;
-  padding: 8px 16px;          /* samma som flikarna */
+  padding: 8px 16px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
-  display: inline-block;      /* gör dem som knappar */
-  width: auto;                /* tar bort full bredd */
-  max-width: none;            /* ingen begränsning */
+  display: inline-block;
+  width: auto;
+  max-width: none;
   transition: all 0.3s;
+  text-align: center;
 }
 
 .service-box:hover {
   background-color: #002f75;
   transform: scale(1.05);
 }
-/* FOOTER */
-footer {
-  margin-top: auto;
-  background: #004aad;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-  position: relative;
-}
 
-.language-switch {
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
-}
-
-/* FORM */
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 8px;
-  margin: 5px 0;
-}
-/* Bildruta (ramen) */
+/* ==========================
+   IMAGE BOX
+========================== */
 .image-box {
   width: 100%;
   height: 200px;
@@ -121,37 +114,68 @@ footer {
   border-radius: 8px;
 }
 
-/* Bilden i rutan */
 .image-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
-}
-
-/* (Valfri) hover-effekt */
-.image-box img:hover {
-  transform: scale(1.05);
   transition: 0.3s;
 }
-/* MOBILE */
-@media (max-width: 768px) {
-  .main-content {
-    margin: 10px;
-    padding: 15px;
-  }
+
+.image-box img:hover {
+  transform: scale(1.05);
 }
+
+/* ==========================
+   CONTACT FORM
+========================== */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+footer {
+  margin-top: auto;
+  background: #004aad;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 3px solid #002f75;
+}
+
+footer p {
+  margin: 0;
+}
+
+.language-switch {
+  position: static; /* låter flexbox styra placering */
+}
+
+/* ==========================
+   MOBILE / RESPONSIVE
+========================== */
 @media (max-width: 768px) {
-  /* Gör banner mindre på mobilen */
+  /* Banner */
   .banner-header {
     height: 120px;
   }
+
   .banner-header .logo-banner {
     height: 100%;
     width: auto;
   }
 
-  /* Flikarna (top-tabs) centrerade */
+  /* Top tabs / flikar */
   .top-tabs {
     flex-direction: column;
     align-items: center;
@@ -164,14 +188,14 @@ footer {
     font-size: 14px;
   }
 
-  /* Service-knappar under varandra istället för i rad */
+  /* Services grid / boxar */
   .services-grid {
     flex-direction: column;
     align-items: center;
     gap: 12px;
   }
 
-  /* Mindre image-box */
+  /* Image box */
   .image-box {
     height: 150px;
   }
@@ -180,48 +204,9 @@ footer {
     object-fit: cover;
   }
 
-  /* Main-content text padding */
-  .main-content {
-    padding: 10px 15px;
-  }
-}
-@media (max-width: 768px) {
-  /* Banner / logo */
-  .banner-header {
-    height: 120px;
-  }
-  .banner-header .logo-banner {
-    height: 100%;
-    width: auto;
-  }
-
-  /* Flikar centreras */
-  .top-tabs {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin: 10px 0;
-  }
-  .top-tabs a {
-    padding: 8px 14px;
-    font-size: 14px;
-  }
-
-  /* Tjänsteboxar under varandra */
-  .services-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
-
-  /* Mindre image-box på mobil */
-  .image-box {
-    height: 150px;
-  }
-
   /* Main content padding */
   .main-content {
-    padding: 10px 15px;
+    margin: 10px;
+    padding: 15px;
   }
 }
