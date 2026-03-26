@@ -11,12 +11,12 @@ body {
 /* HEADER / LOGO FULL BREDD */
 .banner-header {
   width: 100%;
-  height: 120px; /* justera höjden efter behov */
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; /* beskär loggan om den är för stor */
+  height: 150px; /* justera efter önskad höjd */
+  background-image: url('images/logo.png'); /* loggan här */
+  background-size: cover;       /* fyller hela headern */
+  background-position: center;  /* centrerad */
+  background-repeat: no-repeat;
+  overflow: hidden;             /* beskär om loggan är större */
 }
 
 .logo-banner {
