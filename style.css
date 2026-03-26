@@ -12,7 +12,7 @@ body {
 /* ----------------- Header Banner ----------------- */
 .banner-header {
   width: 100%;
-  height: 120px;
+  height: 120px;               /* Höjden på bannern */
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -20,9 +20,9 @@ body {
 }
 
 .logo-banner {
-  width: 100%;      /* Stretchar loggan horisontellt */
-  height: auto;
-  object-fit: cover;
+  width: 100%;                 /* Fyller hela bredden */
+  height: 100%;                /* Fyller hela höjden på bannern */
+  object-fit: fill;            /* Loggan stretchar för att fylla hela ytan */
 }
 
 /* ----------------- Flikmeny ----------------- */
