@@ -29,27 +29,27 @@ body {
 .top-tabs {
   display: flex;
   justify-content: center; /* centrerar horisontellt */
-  align-items: center;     /* centrerar vertikalt om flera rader */
-  gap: 20px;               /* mellanrum mellan flikarna */
-  padding: 15px 0;
-  flex-wrap: wrap;         /* så de går ner på nästa rad på små skärmar */
+  align-items: center;     /* vertikal centering */
+  gap: 15px;               /* avstånd mellan flikarna */
+  padding: 10px 0;
+  flex-wrap: wrap;         /* bryts snyggt på små skärmar */
 }
 
 .top-tabs a {
   background-color: #004aad;
   color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
+  padding: 8px 16px;       /* mindre padding för mindre flik */
+  border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s;
-  text-align: center;      /* säkerställer texten centrerad i flikarna */
+  font-size: 16px;
+  transition: all 0.3s;
 }
 
 .top-tabs a:hover {
   background-color: #002f75;
+  transform: scale(1.05); /* lätt hover-effekt */
 }
-
 
 /* MAIN */
 .main-content {
