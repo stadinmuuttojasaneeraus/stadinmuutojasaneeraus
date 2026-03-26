@@ -28,24 +28,28 @@ body {
 /* NAV */
 .top-tabs {
   display: flex;
-  justify-content: center;
-  gap: 15px;
-  padding: 15px;
-  flex-wrap: wrap;
+  justify-content: center; /* centrerar horisontellt */
+  align-items: center;     /* centrerar vertikalt om flera rader */
+  gap: 20px;               /* mellanrum mellan flikarna */
+  padding: 15px 0;
+  flex-wrap: wrap;         /* så de går ner på nästa rad på små skärmar */
 }
 
 .top-tabs a {
-  background: #004aad;
-  color: #fff;
+  background-color: #004aad;
+  color: white;
   padding: 10px 20px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
+  transition: background 0.3s;
+  text-align: center;      /* säkerställer texten centrerad i flikarna */
 }
 
 .top-tabs a:hover {
-  background: #002f75;
+  background-color: #002f75;
 }
+
 
 /* MAIN */
 .main-content {
