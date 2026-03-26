@@ -2,42 +2,61 @@
 <html lang="fi">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Palvelut</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<div class="main-container">
 <header>
-  <div class="logo-header"></div>  <!-- logotyp som bakgrund -->
-
-  <div class="header-content">
-      <h1>Tervetuloa!</h1>
-      <div class="language-switch">
-          <a href="index.html">FI</a> |
-          <a href="index_sv.html">SV</a> |
-          <a href="index_en.html">EN</a>
-      </div>
+  <div class="banner">
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <div class="language-switch">
+      <a href="#">SV</a> | <a href="#">EN</a>
+    </div>
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
   </div>
 </header>
-<nav>
-<a href="index.html">Etusivu</a>
-<a href="about.html">Tietoa meistä</a>
-<a href="services.html">Palvelut</a>
-<a href="contact.html">Yhteystiedot</a>
-</nav>
 
-<div class="container">
-<h2>Palvelumme</h2>
-<div class="flex">
-<div class="box"><h3>Konsultointi</h3><p>Analysoimme tarpeesi ja tarjoamme parhaat ratkaisut.</p></div>
-<div class="box"><h3>Asennus</h3><p>Ammattimainen ja tehokas asennuspalvelu.</p></div>
-<div class="box"><h3>Huolto</h3><p>Pidämme kaiken toiminnassa pitkällä aikavälillä.</p></div>
-</div>
-</div>
+<aside class="sidebar">
+  <ul>
+    <li><a href="index.html">Etusivu</a></li>
+    <li><a href="#services">Palvelut</a></li>
+    <li><a href="about.html">Tietoa</a></li>
+    <li><a href="contact.html">Yhteystiedot</a></li>
+  </ul>
+</aside>
 
-<footer>© 2026 Yrityksen nimi | <a href="contact.html">Ota yhteyttä</a></footer>
-</div>
+<main>
+  <section id="services" class="services">
+    <div class="service-card">
+      <i class="fas fa-cogs fa-3x"></i>
+      <h3>Palvelu 1</h3>
+      <p>Tiedot palvelusta 1, ammattimainen ja selkeä.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-paint-brush fa-3x"></i>
+      <h3>Palvelu 2</h3>
+      <p>Tiedot palvelusta 2, visuaalisesti houkutteleva.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-chart-line fa-3x"></i>
+      <h3>Palvelu 3</h3>
+      <p>Tiedot palvelusta 3, liiketoimintalähtöinen.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-headset fa-3x"></i>
+      <h3>Palvelu 4</h3>
+      <p>Tiedot palvelusta 4, asiakastuki ja palvelu.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2026 Yrityksen nimi. Kaikki oikeudet pidätetään.
+</footer>
 
 </body>
 </html>
