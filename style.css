@@ -74,11 +74,6 @@ body {
   text-align: center;
 }
 
-.company-name-overlay h1 {
-  font-size: 48px;
-  font-weight: bold;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
-}
 /* MAIN CONTENT / RUTOR */
 .main-content {
   max-width: 900px;
