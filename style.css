@@ -49,6 +49,20 @@ body {
   background-color: #002f75;
   transform: scale(1.05);
 }
+/* HERO BANNER */
+.hero-banner {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px; /* avstånd till main */
+}
+
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* fyller bredden utan att förstöra proportioner */
+  border-radius: 8px; /* valfritt, rundade hörn */
+}
 /* --- FÖRETAGSFOTO MED NAMN --- */
 .company-photo {
   position: relative;
@@ -379,3 +393,7 @@ footer {
     max-width: 300px;
   }
 
+.hero-banner img {
+  max-height: 250px; /* gör att den inte blir för hög på mobilen */
+  object-fit: cover;
+}
