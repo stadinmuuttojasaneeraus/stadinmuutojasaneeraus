@@ -49,7 +49,36 @@ body {
   background-color: #002f75;
   transform: scale(1.05);
 }
+/* --- FÖRETAGSFOTO MED NAMN --- */
+.company-photo {
+  position: relative;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  margin-top: 20px;
+}
 
+.company-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.company-name-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #004aad; /* samma blåa färg som resten */
+  text-align: center;
+}
+
+.company-name-overlay h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
 /* MAIN CONTENT / RUTOR */
 .main-content {
   max-width: 900px;
@@ -181,6 +210,9 @@ h3 {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+  }
+  .company-name-overlay h1 {
+  font-size: 28px; /* mindre på mobil */
   }
 .why-grid {
   flex-direction: column;
