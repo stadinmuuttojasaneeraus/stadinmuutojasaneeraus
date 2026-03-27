@@ -128,7 +128,53 @@ h3 {
   background-color: #002f75;
   transform: scale(1.05);
 }
+/* --- VARFÖR VÄLJA OSS --- */
+.why-choose-us {
+  margin-top: 40px;
+  text-align: center;
+}
 
+.why-choose-us h2 {
+  color: #004aad;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.why-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.why-box {
+  background-color: #004aad;
+  color: white;
+  padding: 25px 20px;
+  border-radius: 12px;
+  min-width: 180px;
+  flex: 1 1 200px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s;
+}
+
+.why-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.why-box p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.why-box:hover {
+  background-color: #002f75;
+  transform: scale(1.05);
+}
 /* --- MOBILANPASSNING --- */
 @media (max-width: 768px) {
   .services-grid {
