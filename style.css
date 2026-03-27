@@ -54,15 +54,15 @@ body {
 .company-section {
   display: flex;           /* gör flexbox */
   flex-direction: row;     /* sida vid sida */
-  align-items: stretch; /* toppjustera innehåll */
-  gap: 20px;               /* lite mellanrum mellan bild och text */
+  align-items: flex-start; /* toppjustera innehåll */
+  gap: 15px;               /* lite mellanrum mellan bild och text */
   margin-top: 20px;
 }
 
 /* Bildbehållare */
 .company-photo {
-  flex: 1;                 /* tar hälften av utrymmet */
-  max-width: 50%;          /* begränsar bredd */
+  flex: 0 0 35%;                 /* tar hälften av utrymmet */
+  max-width: 35%;          /* begränsar bredd */
   position: relative;
   overflow: hidden;
 }
@@ -70,17 +70,15 @@ body {
 /* Själva bilden */
 .company-photo img {
   width: 100%;             /* fyller behållaren */
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
 /* Textrutan */
 .company-text {
-  flex: 1;                 /* tar andra hälften */
-  max-width: 50%;           /* begränsar bredd */
+  flex: 0 0 35%;                 /* tar andra hälften */
+  max-width: 35%;           /* begränsar bredd */
   box-sizing: border-box;
-  margin: 0;
   padding-left: 10xp;
 }
 
@@ -222,9 +220,6 @@ h3 {
     align-items: center;
     gap: 15px;
   }
-  .company-name-overlay h1 {
-  font-size: 28px; /* mindre på mobil */
-  }
 .why-grid {
   flex-direction: column;
   align-items: center;
@@ -273,7 +268,6 @@ h3 {
   border-radius: 8px;
 }
 
-   NY CONTACT DEL
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -390,14 +384,26 @@ footer {
     max-width: 300px;
   }
 
-/* Om du vill hålla samma layout även på små mobiler */
 @media (max-width: 480px) {
   .company-section {
-    flex-direction: row; /* fortfarande sida vid sida */
+    gap: 8px;              /* mindre mellanrum */
+    justify-content: center;
   }
 
-  .company-photo,
+  .company-photo {
+    flex: 0 0 30%;         /* mindre bild */
+    max-width: 30%;
+  }
+
   .company-text {
-    max-width: 50%;     /* behåll samma proportioner */
+    flex: 0 0 30%;         /* mindre textblock */
+    max-width: 30%;
+    padding-left: 5px;
+    font-size: 14px;       /* gör texten mindre */
+  }
+
+  .company-photo img {
+    width: 100%;
+    height: auto;
   }
 }
