@@ -56,7 +56,10 @@ body {
   margin: auto;
   padding: 25px;
 }
-
+h3 {
+  color: #004aad;
+  text-align: center;
+}
 .boxes-container {
   display: flex;
   justify-content: space-around;
