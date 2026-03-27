@@ -50,35 +50,39 @@ body {
   transform: scale(1.05);
 }
 
-/* --- FÖRETAGSFOTO MED NAMN --- */
-.company-photo {
-  position: relative;
-  width: 50%;
-  max-height: 400px;
-  overflow: hidden;
+/* Behåll hela sektionen som flex-container */
+.company-section {
+  display: flex;           /* gör flexbox */
+  flex-direction: row;     /* sida vid sida */
+  align-items: flex-start; /* toppjustera innehåll */
+  gap: 20px;               /* lite mellanrum mellan bild och text */
   margin-top: 20px;
-  display: inline-block;
-  vertical-align: top;
 }
 
+/* Bildbehållare */
+.company-photo {
+  flex: 1;                 /* tar hälften av utrymmet */
+  max-width: 50%;          /* begränsar bredd */
+  position: relative;
+  overflow: hidden;
+  max-height: 400px;
+}
+
+/* Själva bilden */
 .company-photo img {
-  width: 100%;
+  width: 100%;             /* fyller behållaren */
   height: auto;
-  object-fit: conver;
+  object-fit: cover;
   display: block;
 }
-/* Textruta bredvid bilden */
+
+/* Textrutan */
 .company-text {
-  width: 50%;         /* tar andra halvan av sidan */
-  display: inline-block;
-  vertical-align: top;
-  padding-left: 20px; /* lite luft mellan bild och text */
+  flex: 1;                 /* tar andra hälften */
+  max-width: 50%;           /* begränsar bredd */
   box-sizing: border-box;
 }
-.company-photo,
-.company-text {
-  min-height: 400px;
-}
+
 
 /* MAIN CONTENT / RUTOR */
 .main-content {
@@ -387,15 +391,12 @@ footer {
 
 /* Om du vill hålla samma layout även på små mobiler */
 @media (max-width: 480px) {
-  .company-photo,
-  .company-text {
-    width: 50%;          /* fortfarande 50% vardera */
-    display: inline-block;
-    vertical-align: top;
+  .company-section {
+    flex-direction: row; /* fortfarande sida vid sida */
   }
 
-  .company-photo img {
-    width: 100%;         /* bilden fyller sin container */
-    height: auto;
+  .company-photo,
+  .company-text {
+    max-width: 50%;     /* behåll samma proportioner */
   }
 }
