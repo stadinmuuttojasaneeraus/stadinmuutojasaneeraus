@@ -9,12 +9,13 @@ body {
   flex-direction: column;
 
   background-image: url('images/logo.png');
-  background-size: cover;
+  background-size: 60%;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-/* Mörk overlay för bättre kontrast */
+/* Ljus overlay för proffsigt utseende */
 body::before {
   content: "";
   position: fixed;
@@ -22,12 +23,12 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.3);
+  background: rgba(255,255,255,0.85);
   z-index: -1;
 }
 
 /* =========================
-   HEADER (ENKEL / REN)
+   HEADER
 ========================= */
 .banner-header {
   height: 80px;
@@ -47,7 +48,7 @@ body::before {
 }
 
 .top-tabs a {
-  background-color: rgba(0, 74, 173, 0.9);
+  background-color: rgba(0, 74, 173, 0.85);
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
@@ -55,7 +56,7 @@ body::before {
   font-weight: bold;
   font-size: 16px;
   transition: all 0.3s;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
 }
 
 .top-tabs a:hover {
@@ -63,7 +64,6 @@ body::before {
   transform: translateY(-2px);
 }
 
-/* Aktiv flik */
 .top-tabs a.active {
   background-color: #002f75;
 }
