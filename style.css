@@ -54,7 +54,7 @@ body {
 .company-section {
   display: flex;           /* gör flexbox */
   flex-direction: row;     /* sida vid sida */
-  align-items: flex-start; /* toppjustera innehåll */
+  align-items: stretch; /* toppjustera innehåll */
   gap: 20px;               /* lite mellanrum mellan bild och text */
   margin-top: 20px;
 }
@@ -65,13 +65,12 @@ body {
   max-width: 50%;          /* begränsar bredd */
   position: relative;
   overflow: hidden;
-  max-height: 400px;
 }
 
 /* Själva bilden */
 .company-photo img {
   width: 100%;             /* fyller behållaren */
-  height: auto;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -81,6 +80,8 @@ body {
   flex: 1;                 /* tar andra hälften */
   max-width: 50%;           /* begränsar bredd */
   box-sizing: border-box;
+  margin: 0;
+  padding-left: 10xp;
 }
 
 
